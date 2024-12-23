@@ -1,0 +1,12 @@
+n=int(input())
+temp=n
+sum=0
+b=len(str(n))
+while(n>0):
+    rem=n%10
+    sum=sum+rem**b
+    n=n//10
+if(temp==sum):
+    print("Armstrong")
+else:
+    print("Not Armstrong")
